@@ -11,7 +11,7 @@ type Props = {
     }[],
     interval: number
     text?:string
-    title: string
+    title?: string
 }
 
 export default function Carousel({sliderimage, interval, text, title}: Props) {

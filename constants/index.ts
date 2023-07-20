@@ -51,4 +51,9 @@ export const navlinks = [
         page: 'CONTACT',
         path: '/contact'
     },
+    {
+        id: 5,
+        page: 'PRODUCTS',
+        path: '/products'
+    },
 ]

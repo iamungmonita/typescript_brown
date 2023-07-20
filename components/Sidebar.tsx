@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import NavLink from './NavLink'
 import { navlinks } from '@/constants/index'
 import Image from 'next/image'
