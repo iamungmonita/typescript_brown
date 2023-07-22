@@ -3,6 +3,7 @@ import Image from 'next/image'
 import logo from '@/public/vercel.svg'
 import {menuIcon} from '@/public/icons/index'
 import {Navlinks, Sidebar} from './index'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -21,9 +22,9 @@ export default function Navigation({}: Props) {
     <>
     <nav className='max-w-6xl mx-auto p-5 border-b'>
         <div className='flex justify-between'>
-            <div>
+            <Link href={'/'}>
                 <Image src={logo} alt='logo' height={18} width={118}/>
-            </div>
+            </Link>
             <div>
                 <Navlinks setToggle={setToggle}/>
             </div>

@@ -13,8 +13,8 @@ type Props = {
 export default function ProductCard({productTitle, productDescription,productId,productImage}: Props) {
   const lowerCase = productTitle.toLocaleLowerCase().replace(/ /g, '')
   return (
-    <div className='bg-green-200 p-5'>
-        <Image src={productImage} alt={productTitle} width={300} height={200}/>
+    <div className='bg-gray-200 p-5 shadow'>
+        <Image src={productImage} alt={productTitle} width={400} height={300}/>
         <Link href={`/products/[productId]`} as={`/products/${productId}`}>
             <h2>{productTitle}</h2>
             <p>{productDescription}</p>
